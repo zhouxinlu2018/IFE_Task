@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">  
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+]; 
+//心得： 1.元素 需要变量作为桥梁 2.使用文本节点和添加子节点的方式，将文本值添加到指定元素内
+    
+
+//定义变量从0开始的i 定义for循环   
+for (var i = 0 in aqiData) {
+    //定义 对应城市的分数 变量
+    var mark = Number(aqiData[i][1]);
+    //条件判断 分数 大于60 
+    if (mark > 60) {
+        //创建 元素li 并赋值给 变量Li
+        var Li = document.createElement("li");
+        //创建 aqiList 变量 里面包含了 从用id aqi-list 取得的元素
+        var aqiList = document.getElementById("aqi-list");
+        //将 Li变量 添加为 aqiList变量 的子元素
+        aqiList.appendChild(Li);
+        //定义 cityName 并将 aqiData数组中城市名称 创建为 文本节点 赋值给变量  
+        var cityName = document.createTextNode(aqiData[i][0]);
+        //Li变量下添加 文本节点cityName
+        Li.appendChild(cityName);
+    }
+}
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+
+</script>
+</body>
+</html>
+
+
+
+
+

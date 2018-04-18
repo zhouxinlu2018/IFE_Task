@@ -1,0 +1,215 @@
+<!--网页解构:
+1.<header>为空
+2.<nav>包括两个元素 logo 和 menu
+3.<main> 包括了五个section 注意:底部右侧阴影
+4.图片的section 注意带框带注解
+5.表格section 注意反色效果
+6.侧栏section 使用<label> 标题前小色块  内容元素居中 圆角按钮 
+7.<footer>别忘记-->
+
+<!doctype html>
+<html>
+    <head>
+        <title>Task2</title>
+        <meta charset="utf-8">
+        <!--base自封闭-->
+        <base herf="file:///Users/sin/Desktop/IFE_Task/Task1-2/" />
+        <!--链接到task2.css-->
+        <link href="Task1-2.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="container">
+        <header>
+        </header>
+        <nav>
+            <img src="img/Logo.gif" height="60px" width="180px"/>
+<!--Q:这里为什么最后一个链接是灰色的?-->
+<!--横向导航栏navbar & 锚链接-->
+<!--css navbar:横向排列 消除链接效果-->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#article1">导航链接一</a></li>
+                    <li><a href="#article2">导航链接二</a></li>
+                    <li><a href="#img-album">导航链接三</a></li>
+                    <li><a href="#last-article">导航链接四</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section id="article1">
+                <h1>文章一级标题</h1>
+                <h3>文章二级标题</h3>
+                <span>文章作者&nbsp;</span><span>文章发表时间</span>
+                <!--css main.article.p:首行缩进2em-->
+                <p>x这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,换行了</br>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,<strong>这里有个粗体字</strong>这是一个很长的段落,这是一个很长的段落</br></p>
+                <img src="img/Task1-2.png" alt="好看的图片" width="300px" height="240px">   
+                <p>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,换行了</br>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,<strong>这里有个粗体字</strong>这是一个很长的段落,这是一个很长的段落</br></p>
+            </section>
+            <section id="article2">
+                <h1>另一篇文章的一级标题</h1>
+                <h3>文章二级标题</h3>
+                <span>文章作者&nbsp;</span><span>文章发表时间</span>
+                <!--css main.article.p:首行缩进2em-->
+                <p>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,换行了</br>这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,<strong>这里有个粗体字</strong>这是一个很长的段落,这是一个很长的段落</br></p>
+                <img src="img/Task1-2.png" alt="好看的图片" width="300px" height="240px">  
+                <!--去掉默认的小黑点--> 
+                <ul>
+                    <li>列表项目一</li>
+                    <li>列表项目二</li>
+                    <li>列表项目三</li>
+                </ul>
+             </section>
+             <section id=img-album>
+                <h1>图片</h1>
+                
+                <div class="album">
+                    <p>好看的图片</p>
+                    <img src="img/Task1-2.png" alt="好看的图片" width="100px" height="80px">  
+                </div> 
+                
+                <div class="album">
+                    <p>好看的图片</p>
+                    <img src="img/Task1-2.png" alt="好看的图片" width="100px" height="80px">  
+                </div> 
+                
+                 <div class="album">
+                    <p>好看的图片</p>
+                    <img src="img/Task1-2.png" alt="好看的图片" width="100px" height="80px">  
+                </div>
+                
+                <div class="album">
+                    <p>好看的图片</p>
+                    <img src="img/Task1-2.png" alt="好看的图片" width="100px" height="80px">  
+                </div>
+             </section>
+             <section id=last-article>
+                <h1>最后一篇文章一级标题</h1>
+                <h3>文章二级标题</h3><!--所有的二级标题都是灰色的-->
+                <span>文章作者&nbsp;</span><span>文章发表时间</span>
+                <ol>
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+                <p>下面是一个表格,我这里给表格加了一个border="1"好让你看出是表格</p>
+                <table border="1">
+                <!--td是列 tr是行-->
+                <thead>
+                <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+                </tr>
+                </thead>
+                <tbody>    
+                <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="##">操作</a></td>
+                </tr>
+                <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="##">操作</a></td>
+                </tr>
+                <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="##">操作</a></td>
+                </tr>
+                <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="##">操作</a></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                <td>总计</td>
+                <td colspan="2">1000</td>
+                </tr>
+                </tfoot>
+                </table>
+            </section>
+            <section>
+            <aside>
+            <h2 class="aside-h2">这里以后是一个侧栏,这是侧栏的标题</h2>
+                <form>
+                <!--邮箱-->
+                        <label for="email">请输入邮箱地址</label>
+                        <input type="text" name="email" value="这是一个文本输入框" /></br>
+                        <span class="note">邮箱地址请按要求格式输入</span></br>
+                
+                <!--密码-->
+
+                        <label for="passwd">请输入密码</label>
+
+
+                        <input type="password" name="passwd" value="123456789"/></br>
+
+
+                        <label for="repasswd">请重复输入密码</label>
+
+
+                        <input type="password" name="repasswd" value="123456789" /></br>
+                        <span class="note">密码请为6-16位英文数字</span></br>
+
+                <!--性别--> 
+
+                        <label for="sex">性别</label>
+
+
+                        <input type="radio" name="sex" value="male">
+                        <span class="option">男</span>
+                 
+                        <input type="radio" name="sex" value="female">
+                        <span class="option">女</span></br>
+
+                
+                <!--城市-->
+                
+                    <label for="city">城市</label>
+                
+                
+                    <select name="city">
+                    <option value="beijing" selected="selected">北京</option>
+                    <option value="shanghai">上海</option>
+                    <option value="guangzhou">广州</option>
+                    </select></br>
+                    
+                <!--爱好-->
+                
+                    <label for="checkbox">爱好</label>
+               
+                
+                <input type="checkbox" name="checkbox">
+                <span class="option" >运动</span>
+                <input type="checkbox" name="checkbox">
+                <span class="option">艺术</span>
+                <input type="checkbox" name="checkbox">
+                <span class="option">科学</span>
+                </br>
+                
+                    <label for=textarea>个人描述</label>
+                <div class="textarea">
+                    <textarea name="textarea" rows="10" cols="30"/>这是一个多行输入框,输入您的个人描述
+                    </textarea>
+                </div>
+                </form>
+
+
+                <!--个人描述-->
+
+                
+                <!--提交按钮-->
+
+                <div class="btn">
+                    <a href="##">确认提交</a>
+                </div>
+               
+        </aside>
+        </section>
+        <footer>
+            <p>版权所有&copy;</p>
+        </footer>
+    </body>
+</html>

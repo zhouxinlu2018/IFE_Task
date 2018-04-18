@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id=userInput>
+  <button id="leftIn" onclick="leftIn">左侧入</button> unshift
+  <button id="rightIn" onclick="rightIn">右侧入</button> push
+  <button id="leftOut" onclick="leftOut">左侧出</button> shift
+  <button id="rightOut" onclick="leftIn">右侧出</button> pop
+  <div id=cubeList></div>
+<script type="text/javascript">
+  var numArr = [];
+  var inputValue = Number(document.getElementById('userInput').value);
+
+  function leftIn() {
+    numArr.unshift(userInput);
+    for (var i = 0; i < numArr.length; i++){
+      var numCube = document.createElement('span');
+      numCube.innerHTML = numArr[i];
+      div.appendChild(numCube);
+    }
+  }
+
+  function rightIn() {
+    numArr.push(userInput);
+    for (var i = 0;i < numArr.length; i++){
+      document.write(numArr[i]);
+    }
+  }
+
+  function leftOut() {
+    aler(numArr.shift());
+    for (var i = 0;i < numArr.length; i++){
+    document.write(numArr[i]);
+    }
+  }
+
+  function rightOut() {
+    alert(numArr.pop());
+    for (var i = 0; i < numArr.length; i++) {
+    document.write(numArr[i]);
+    }
+  }
+
+</script>
+</body>
+</html>

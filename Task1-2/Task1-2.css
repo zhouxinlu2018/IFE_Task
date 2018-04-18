@@ -1,0 +1,200 @@
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    line-height: 2em;
+    background-color: #dedede;
+}
+            /**========导航栏========**/
+nav {
+    max-width:1280px;
+    height:60px;
+    margin:0 auto;
+    background-color: #333333;
+}
+
+.navbar{                
+    float:right;
+    margin:15px;
+}
+
+.navbar ul { /**<ul>元素的样式**/
+    margin:0;
+    padding:0;
+    list-style:none;/**去掉默认小圆点**/
+}
+
+.navbar ul li{ /**<li>每个小元素的样式**/
+     display:inline-block; 
+     margin:5px;
+     font-size:5px;
+}
+
+.navbar ul li a {
+      color:white;
+      text-decoration: none; /**去掉下划线样式**/
+}
+/**=========文章节&文字部分===========**/
+section {
+      margin: 2% 2% 0 2%;
+      padding: 4em 2em;
+      line-height: 2.3em;
+      background-color: white;
+      border: 1px solid #c3c3c3;
+      box-shadow: 2px 2px #9c9c9c;
+}
+
+h1 {
+      padding-bottom: 0.5em;
+}
+
+h3 {
+      color:darkgray;
+      font-size:1em;  
+}
+
+p {
+      text-indent: 2em;
+}
+
+span { 
+    color: darkgray;
+    font-size: 3px;
+}
+
+/**====清除<ul>默认样式====**/
+#article2 ul {
+     text-indent:2em;
+     list-style: none;
+}
+/**====图片节样式====**/
+.album {
+     width:9%;
+     margin:4.5%;
+     padding:0.9%;
+     border:1px solid #c3c3c3;    
+}
+
+.album img{
+     display:block;
+}
+
+.album p{
+     height:30px;
+     margin: 0;
+     padding: 0;
+     font-size: 10px;
+     text-align:center;
+     text-indent:0;
+}
+
+/**====表格节样式====**/
+#last-article ol {
+     margin-left: 2em;
+}
+
+#last-article p {
+     text-indent:0;
+}
+
+#last-article table {
+     width:100%;
+     border-collapse:collapse;
+     border:1px solid #cccccc;
+     text-align:left;
+     font-size: 6px;
+}
+
+#last-article table thead {
+     background-color: #333333;
+     color:aliceblue;
+}
+#last-article table th,td {
+    padding: 0 0 0 .5%;
+} 
+
+#last-article table tfoot {
+     background-color: #cccccc;
+     font-weight:700;
+}
+
+#last-article table td {
+     height:10px;
+}
+
+/**====侧栏节样式====**/
+aside {
+
+}
+.aside-h2 {
+      margin:0 1em;
+      padding: 5px;
+      border-left: 4px solid #cdcdcd;
+      text-indent: 1em;
+      font-size: 18px;
+      text-align: left;
+}
+aside label {
+    float: left;
+    text-align: right;    
+    width: 130px;
+    height: 35px;
+    color: #000000;
+    margin:0 10px;
+    font-size: 10px;
+}
+
+form {
+    margin: 3% 20%;
+}
+
+.option {
+    color:black;
+}
+span.note {
+    margin:0 0 0 150px;
+}
+.textarea {
+    margin-top: 12px;
+}
+
+
+.btn {
+    margin:auto;
+    padding:0;
+    max-width:1200px;
+    height:50px;
+    border: 1px solid #3355d0;
+    border-radius: 15px;
+    background-color:#3355d0;
+}
+
+.btn a {
+    display:block;/**a标签为inline元素,无法s居中**/
+    width:65px;
+    color:aliceblue;
+    text-decoration: none;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: black;
+    height: 80px;
+}
+footer p {
+    color:aliceblue;
+    text-align: center;
+    font-size:10px;
+    margin-top:20px;
+    padding-top: 2em;
+}
+             

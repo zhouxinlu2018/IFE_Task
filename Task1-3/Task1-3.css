@@ -1,0 +1,74 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    margin:5px;
+    border:1px solid #999;
+}
+.warp {
+    display: -webkit-flex;
+    display: flex;
+    max-width:100%;
+    margin:20px 20px 100% 20px;;
+    padding:20px;
+    background:#eee;
+    border:1px solid #999;
+}
+
+.group-name {
+    width:200px;
+    height:80px;
+    margin:0 20px 0 0;
+    padding:20px;
+    border:1px solid #999;
+    background:#fff;
+}
+
+.group-logo {
+    float:left;
+    width:80px;
+    height:80px;
+    background:#eee;
+    border:1px solid #999;
+}
+
+.introduction {
+    -webkit-flex: 1;
+    flex: 1;
+    margin:0 20px 0 0;
+    padding:20px;
+    border:1px solid #999;
+    background:#fff;
+}
+
+.personal-warp {
+    width:120px;
+    border:1px solid #999;
+    background:#fff;
+}
+
+.personal-logo {
+    width:80px;
+    height:80px;
+    margin: 20px;
+    border: 1px solid #999;
+    background:#eee;
+}
+.logo {
+    display:inline-block;
+    font-size:14px;
+    height: 40px;
+    width: 56px;
+    margin:20px 12px;
+    text-align:center;
+}
+p {
+    display:inline-block;
+    font-size:13px;
+}
+#name {
+    display: inline-block;
+    float:right;
+    margin:0 10% 0 0;   
+}

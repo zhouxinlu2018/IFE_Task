@@ -1,0 +1,37 @@
+body {
+  background: #fff;
+}
+
+.box {
+    background: #ccc;
+    width: 400px;
+    height:200px;
+    position: fixed;
+    margin:auto;
+    left:0;
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+    z-index: 1000000;
+    overflow:hidden;/**隐藏是写在父元素内的**/ 
+}
+.sector1 {
+    position: absolute;
+    width:0;
+    height:0;
+    border: 50px solid #fc0;
+    border-radius: 50px;
+    left:-50px;
+    top:-50px;
+    z-index:1;
+}
+.sector2 {
+    position: absolute;
+    width:0;
+    height:0;
+    border: 50px solid #fc0;
+    border-radius: 50px;
+    right:-50px;
+    bottom:-50px;
+    z-index:1;    
+}
