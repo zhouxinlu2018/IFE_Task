@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+
+  </style>
+</head>
+<body>
+  <input id="userIpt" type="text" placeholder="请在此输入数字">
+  <button id=lftInBtn>左侧入</button>
+  <button id=rgtInBtn>右侧入</button>
+  <span>&nbsp&nbsp&nbsp&nbsp</span>
+  <button id=lftOutBtn>左侧出</button>
+  <button id=rgtOutBtn>右侧出</button>
+  <div id="queue"></div>
+<script type="text/javascript">
+    //取得 Input元素
+    var userIpt = document.getElementById('userIpt');
+      //条件判断以验证
+      function iptTest() {
+        var stringIpt = userIpt.value;
+        var numIpt = Number(stringIpt);
+        if (typeof(numIpt) !== Number)
+        { //不是数字，则警告
+          alert("请输入数字");
+        }
+        else
+        {
+          return numIpt; //是数字，则返回numIpt
+        }
+      }
+        //生成一个新元素
+        var queEle = document.getElementById("queue");
+        var numEle = document.createElement("div");
+
+        //为numEle添加样式
+        numEle.style.color = "green";
+
+        //获得按钮元素
+        var lftInEle = document.getElementById("lftInBtn");
+        var rgtInEle = document.getElementById("rgtInBtn");
+        var lftOutEle = document.getElementById("lftOutBtn");
+        var rgtOutEle = document.getElementById("rgtOutBtn");
+
+        //左侧入函数
+        function lftIn() {
+          //先调用数字验证函数
+          iptTest();
+          //将numIpt赋值给numNode
+          var numNode = document.createTextNode(String(numIpt));
+          //将numNode追加给 numEle充当子元素
+          numEle.appendChild(numNode);
+            //判断numEle是否为空
+            if (queEle.firstChild = null)
+            {//若空 直接追加至末尾
+              queEle.appendChild(numEle);
+            }
+            else
+            {//若非空 插入 第一个子元素之前
+              queEle.insertBefore(numEle,queEle.firstChild);
+            }
+        }
+        //按钮绑定函数
+        lftInEle.addEventListener('click', lftIn);
+</script>
+</body>
+</html>
